@@ -1,0 +1,188 @@
+body {
+    background-color: #FAFAFA;
+	color: #484848;
+	font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	margin-top: 70px;
+	min-height: 100vh;
+	padding: 0;
+	position: relative;
+}
+
+#about {
+    display: flex;
+}
+
+.about-boxes {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+#info {
+    display: flex;
+    flex-direction: column;
+}
+.about-boxes h3 {
+    font-size: 24px;
+    margin-bottom: 0px;
+    padding-left: 50px;
+    margin-top: 25px;
+}
+
+.about-boxes p{
+    font-size: 20px;
+    margin-bottom: 50px;
+    padding: 0px 50px;
+}
+
+#me {
+    /* margin-top: 40px; */
+    object-fit: contain;
+    width: 60%;
+}
+
+hr.line {
+    border: 4px solid #19273A;
+    width: 75%;
+  }
+
+#portfolio {
+    /* border-bottom: 6px solid  #19273A;
+    border-top: 6px solid  #19273A; */
+}
+
+#portfolio h1 {
+    /* background: #19273A; */
+    /* margin-bottom: 32.57px; */
+    font-size: 44px;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    /* row-gap: 50px; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 330px 330px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.blue-background {
+    background: #286FB4;
+    display: grid;
+    object-fit:contain;
+}
+
+.blue-background p {
+    color:  blanchedalmond;
+    text-align: center;
+}
+
+a {
+    font-weight: 500;
+    /* text-decoration: none; */
+}
+
+.blue-background a {
+    text-decoration-color:  blanchedalmond;
+}
+
+.gray-background {
+    background:#DFE5F3;
+    display:grid;
+}
+
+.gray-background p {
+    color:  #19273A;
+    text-align: center;
+}
+
+.projects {
+    height: auto;
+    margin: auto;
+    width: 75%;
+}
+
+#airbnb {
+    height: 75%;
+    margin-top:40px;
+    width: auto;
+}
+
+#friendzy {
+   height: auto;
+   margin-top:40px;
+   width: 75%;
+}
+
+#tictactoe {
+    height: 75%;
+    margin-top: 40px;
+    width: auto;
+}
+
+#simon {
+    height: 75%;
+    margin-top:40px;
+    width: auto;
+}
+
+#calculator {
+    height: 250px;
+    margin-top: 40px;
+    width: auto;
+}
+
+#wiki-viewer {
+    /* height: 75%; */
+    margin-top: 119.125px;
+    margin-bottom: -60px;
+    /* width: auto; */
+}
+
+#contact {
+    background-color: #19273A;
+    height: 140px;
+    width: 100%;
+}
+
+.contact-info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-h2 {
+    color: #FFFFFF;
+    /* margin-right: 50px; */
+    margin-top: 10px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-right:40px; */
+    width: 30%;
+}
+.social i {
+    width: 60px;
+    height: 60px;
+    color: #FFFFFF;
+    background-color: #5985C1;
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 30px;
+    line-height: 60px;
+    /* margin-left: 10px; */
+    text-align:center;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all ease 0.3s;
+    -moz-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -ms-transition: all ease 0.3s;
+}
