@@ -2,78 +2,95 @@
 <html lang="en">
     <head>
         <meta charset ="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	    <title>Viet Tran's Portfolio</title>
+        <meta name="description" content="Viet Tran's portfolio site">
         <script src="https://kit.fontawesome.com/cc205dab58.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="styles/header.css">
-        <link rel="stylesheet" href="styles/common.css">
-        <link rel="stylesheet" href="styles/footer.css">
+        <link rel="stylesheet" href="styles/styles.css">
     </head>
 	<body>
 		<header>
-            <div class="info">
-                <div id="name"><a href="#contact">Viet Tran</a></div>
-                <div id"title">Full Stack Developer</div>
-            </div>
-            <nav>
-                <div><a href="#about" class="navbar-child">About</a></div>
-                <div><a href="#portfolio" class="navbar-child">Portfolio</a></div>
-                <div><a href="#contact" class="navbar-child">Contact</a></div>
-            </nav>
-        </header>
-        <section id="about">
-            <div class="about-boxes" id="info">
-                <h3>About me</h3>
-                <p>Hello world. I am a full stack developer in Cohort 11 at Holberton School in Tulsa. I recently completed the foundations year where I wrote my own functions and created a shell using C language. I then learned Python, Javascript, and DevOps to create and deploy web applications. Recently I’ve been familiarizing myself with other web frameworks (Django) and architecture (Jamstack).</p>
-            </div>
-            <div class="about-boxes">
-                <img src="images/holbie.jpg" alt="Viet Tran headshot" id="me">
-            </div>
-        </section>
-        <hr class="line">
-        <section id="portfolio">
-            <h1>Portfolio</h1>
             <div class="container">
-                <div class="blue-background">
-                    <img class="projects" id="airbnb" src="images/airbnb.png">
-                    <a href="https://github.com/veeteeran/Airbnb_clone_v4" target="_blank"><p>Airbnb clone made using a LAMP stack</p></a>
+                <div class="info">
+                    <div id="name"><a href="#contact" class="contact">Viet Tran</a></div>
+                    <div id="title">Full Stack Developer</div>
                 </div>
-                <div class="gray-background">
-                    <img class="projects" id="friendzy" src="images/friendzy.png">
-                    <a href="https://friendzfor.me" target="_blank"><p>Full stack project for Holberton School</p></a>
-                </div>
-                <div class="gray-background">
-                    <img class="projects" id="tictactoe" src="images/tictactoe.png">
-                    <a href="https://codepen.io/viet_tran/full/LLBMjj" target="_blank"><p>Play Tic tac toe</p></a>
-                </div>
-                <div class="blue-background">
-                    <img class="projects" id="simon" src="images/simon.png">
-                    <a href="https://codepen.io/viet_tran/full/dzaBYL" target="_blank"><p>Play Simon</p></a>
-                </div>
-                <div class="blue-background">
-                    <img class="projects" id="calculator" src="images/calculator.png">
-                    <a href="https://codepen.io/viet_tran/full/bqPmQv" target="_blank"><p>Calculate numbers</p></a>
-                </div>
-                <div class="gray-background">
-                    <img class="projects" id="wiki-viewer" src="images/wikiviewer.png">
-                    <a href="https://codepen.io/viet_tran/full/RKpREM" target="_blank"><p>Search Wikipedia</p></a>
-                </div>
+                <nav class="navbar-menu">
+                    <ul class="nav">
+                        <li class="nav-item"><a href="#about" class="navbar-link">About</a></li>
+                        <li class="nav-item"><a href="#portfolio" class="navbar-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="#contact" class="navbar-link">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-        </section>
-        <section id="contact">
-            <div class="contact-info">
-                <h2 class="contact-h2">Contact me</h2>
-                <div class="social">
-                    <a href="https://www.linkedin.com/in/viet-t/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/veeteeran" target="_blank"><i class="fab fa-github-square"></i></a>
-                    <a href="https://twitter.com/veeteeran" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="mailto:viet.tran@holbertonschool.com"><i class="fas fa-envelope-square"></i></a>
+        </header>
+        <main>
+            <section class="section-about">
+                <div class="container">
+                    <div class="about-text" id="info">
+                        <h1 class="section-header">About me</h3>
+                        <p class="section-tagline">Hello world. I am a full stack developer in Cohort 11 at <a href="https://www.holbertonschool.com/campus_life/tulsa">Holberton School</a> in Tulsa, OK. I recently completed the foundations year where I wrote my own functions and created a shell using C language. I then learned Python, Javascript, and DevOps to create and deploy web applications. My second year is focused on in-depth learning of technoogies of the web stack.</p><br>
+                        <p class="section-tagline">I am also part of the 2021 winter cohort at <a href="https://the-collab-lab.codes/">The Collab Lab</a>. The team of four developers I am on are building a React app. We have been pair programming since the beginning of the project, participating in code reviews, getting feedback from our mentors, and demo-ing our work to entire team each week.</p>
+                    </div>
+                    <div class="about-img">
+                        <img src="images/holbie.jpg" alt="Viet Tran headshot" id="me" width="379px" height="260px">
+                    </div>
                 </div>
-            </div>
-        </section>
-		<footer>
-            <div class="footer-text">
-                <h3 id="made-with">Made using a little HTML and CSS</h3>
-                <h3>&copy Viet Tran 2020</h3>
+            </section>
+            <hr class="line">
+            <section class="section-portfolio">
+                <div class="container">
+                    <h1 class="section-header">Portfolio</h1>
+                    <div class="project-rows">
+                        <div class="row row-1">
+                            <div class="projects">
+                                <img class="project-img" id="airbnb" src="images/airbnb.png">
+                                <a href="https://github.com/veeteeran/Airbnb_clone_v4"><p>Airbnb clone made using a LAMP stack</p></a>
+                            </div>
+                            <div class="projects">
+                                <img class="project-img" id="friendzy" src="images/friendzy.png">
+                                <a href="https://friendzfor.me"><p>This is my full stack project for Holberton School</p></a>
+                            </div>
+                        </div>
+                        <div class="row row-2">
+                            <div class="projects">
+                                <img class="project-img" id="tictactoe" src="images/tictactoe.png">
+                                <a href="https://codepen.io/viet_tran/full/LLBMjj"><p>Play Tic tac toe</p></a>
+                            </div>
+                            <div class="projects">
+                                <img class="project-img" id="simon" src="images/simon.png">
+                                <a href="https://codepen.io/viet_tran/full/dzaBYL"><p>Play Simon</p></a>
+                            </div>
+                        </div>
+                        <div class="row row-3">
+                            <!-- <div class="projects">
+                                <img class="project-img" id="calculator" src="images/calculator.png">
+                                <a href="https://codepen.io/viet_tran/full/bqPmQv"><p>Calculate numbers</p></a>
+                            </div> -->
+                            <div class="projects">
+                                <img class="project-img" id="wiki-viewer" src="images/wikiviewer.png">
+                                <a href="https://codepen.io/viet_tran/full/RKpREM"><p>Search Wikipedia</p></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="contact-info">
+                    <h2>Contact me</h2>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/viet-t/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/veeteeran"><i class="fab fa-github-square"></i></a>
+                        <a href="https://twitter.com/veeteeran"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:viet.tran@holbertonschool.com"><i class="fas fa-envelope-square"></i></a>
+                    </div>
+                </div>
+                <div class="footer-text">
+                    <h3 id="made-with">Made using a little HTML and CSS</h3>
+                    <h3>&copy Viet Tran</h3>
+                </div>
             </div>
         </footer>
 	</body>
